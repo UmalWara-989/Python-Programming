@@ -23,7 +23,7 @@ for i in range(size):
   age.append(int(input()))
   print("Enter timing at index [",i,"] : ", end=" ")
   timing.append(input())
-  if names[i] == "Umal" and age[i] > 18 or timing[i] == "perfect":
+  if (names[i] == "Umal" or age[i] > 18) and timing[i] == "perfect":
   print()
   print(f"Congratulations! {names[i]} You are eligible for the scholarship!")
   count_approved += 1
