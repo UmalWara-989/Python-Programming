@@ -26,7 +26,6 @@ def game_win(comp, you):
 
 
 # Computer's Turn                
-print("Computer Turn: Snake(s) water(w) or gun(g)?")
 rand_no = random.randint(1, 3)
 
 if rand_no == 1:
@@ -40,6 +39,7 @@ elif rand_no == 3:
 stop = None
 while(stop!='q'):
     print("**--__Welcome to Snake Water Gun Game__--**")
+    print("Computer Turn: Snake(s) water(w) or gun(g)?")
     you = input("\nYour Turn : Snake(s) water(w) or gun(g)? ")
 
     print(f"\nComputer chose '{comp}'")
@@ -55,4 +55,4 @@ while(stop!='q'):
         print("You Lose!")
 
     stop = input("\nPress 'q' to quit and 'c' to continue game : ")
-    print("*---------------------------------------------*\n")    
+    print("*---------------------------------------------*\n")            
