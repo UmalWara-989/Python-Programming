@@ -37,17 +37,22 @@ elif rand_no == 3:
     comp = 'g'
 
 # Player Turn
-you = input("Your Turn : Snake(s) water(w) or gun(g)? ")
+stop = None
+while(stop!='q'):
+    print("**--__Welcome to Snake Water Gun Game__--**")
+    you = input("\nYour Turn : Snake(s) water(w) or gun(g)? ")
 
-print(f"\nComputer chose '{comp}'")
-print(f"You chose '{you}'\n")
+    print(f"\nComputer chose '{comp}'")
+    print(f"You chose '{you}'\n")
 
-# Function call
-a = game_win(comp,you)
-if a == None:
-    print("The game is a Tie!")
-elif a:
-    print("Congratulations! You Win")
-else:
-    print("You Lose!")        
+    # Function call
+    a = game_win(comp,you)
+    if a == None:
+        print("The game is a Tie!")
+    elif a:
+        print("Congratulations! You Win")
+    else:
+        print("You Lose!")
 
+    stop = input("\nPress 'q' to quit and 'c' to continue game : ")
+    print("*---------------------------------------------*\n")    
